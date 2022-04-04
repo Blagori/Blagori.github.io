@@ -9,12 +9,45 @@
 				color: floralwhite;
 				text-align: center;
 			}
-			.background {
-			  opacity: 0.1;
+			
+			div{
+				width: 2cm;
+				height: 2cm;
 			}
+			
+			div img{width: 100%;}
+			
+			.button1{
+				position: relative;
+				font-size: 20px;
+			}
+			.button1:active{
+				top: 2px;
+			}
+			
+			.input{
+				font-size: 20px;
+			}
+			
 		</style>
+		<script src="js/jquery.min.js"></script>
 	</head>
 	<body background="BG.jpg" style="background-repeat: no-repeat;background-size: 100% 100%;background-attachment: fixed;">
-		<h1 class="title">杨凡琪个人空间</hi>
+		<h1 class="title">我的个人空间</hi>
+		<br>
+		<br>
+		<div>
+			<img src="profile_photo.jpg" alt="">
+		</div>		
+		<script>
+			function add(){
+				int num = document.getElementById("text");
+				num ++;
+				return num;
+			}
+		</script>
+		<button class="button1" style="float: left;">👍+1</button>
+		<input type="text" id="text"   style="float: left;" class="input" onfocus="this.blur()"/>
+		
 	</body>
 </html>
